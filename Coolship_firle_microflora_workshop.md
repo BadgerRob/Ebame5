@@ -480,3 +480,6 @@ How does it differ from the raw read Kraken2 report?
 Long read sequencing provides a means to assemble metagenomes. Due to the length of reads, assemblies of larger complete contigs are possible relative to short, high accuracy reads. This often permits a greater understanding of community composition, genetic diversity as well as a greater resolution of the genetic context of genes of interest.  
 
 So, what is _"Firle Microflora"_?
+
+![alt text](https://github.com/BadgerRob/Ebame5/blob/master/assembled.png)
+_Assembly with Flye_
