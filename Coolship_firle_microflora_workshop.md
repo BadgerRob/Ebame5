@@ -99,13 +99,13 @@ rm -r coolship20
 
 Guppy fast basecalling:
 ```
-guppy_basecaller -r --input_path coolship2 --save_path coolship2_fastq --qscore_filtering --min_qscore 7 --cpu_threads_per_caller 4 --num_callers 2 --flowcell FLO-PRO001 --kit SQK-RNA002
+guppy_basecaller -r --input_path coolship2 --save_path coolship2_fastq --qscore_filtering --min_qscore 7 --cpu_threads_per_caller 4 --num_callers 2 --flowcell FLO-MIN106 --kit SQK-LSK109
 ```
 
 
 Guppy high_accuracy basecalling:
 ```
-guppy_basecaller -r --input_path coolship2 --save_path coolship2_fastq_hq --config dna_r9.4.1_450bps_hac.cfg  --qscore_filtering --min_qscore 7 --cpu_threads_per_caller 4 --num_callers 2
+guppy_basecaller -r --input_path coolship2 --save_path coolship2_fastq_hq --config dna_r9.4.1_450bps_hac.cfg  --qscore_filtering --min_qscore 7 --cpu_threads_per_caller 4 --num_callers 2 --flowcell FLO-MIN106 --kit SQK-LSK109
 
 ```
 
@@ -427,7 +427,7 @@ Racon is then used to polish the assembled contigs using the mapped raw reads.
 
 ```
 
-racon -t 12 workshop.reads.fastq workshop.reads_to_assembly.paf.gz workshop.contigs.fasta > workshop.contigs.racon.fasta
+racon -t 8 workshop.reads.fastq workshop.reads_to_assembly.paf.gz workshop.contigs.fasta > workshop.contigs.racon.fasta
 
 ```
 
